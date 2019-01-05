@@ -1,0 +1,103 @@
+	@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
+
+		color: $textColor;
+		position: relative;
+		$steps: $intensity;
+
+		@at-root {
+			@for $i from 1 through 2 {
+				@keyframes #{$name}-anim-#{$i} {
+					@for $i from 0 through $steps {
+						#{percentage($i*(1/$steps))} {
+							clip: rect(random($height)+px,
+								$width+px,
+								random($height)+px,
+								0);
+						}
+					}
+				}
+			}
+		}
+
+		&:before,
+		&:after {
+			content: attr(data-text);
+			position: absolute;
+			top: 50;
+			left: 0;
+			width: 100%;
+			clip: rect(0, 0, 0, 0);
+		}
+
+		&:after {
+			z-index: 1;
+			left: 71px;
+			// border-radius: 0px 5px 50px 0px;
+			text-shadow: -1px 0 $highlightColor1;
+			// background-color: #5F27CD;
+			animation: #{$name}-anim-1 5s infinite linear alternate-reverse;
+			// animation: background-color 10s infinite linear alternate-reverse;
+			// display: block;
+			// top: 0;
+		}
+
+		&:before {
+			z-index: 1;
+			margin-left: 71px;
+			text-shadow: 2px 0 $highlightColor2;
+			background-color: #5F27CD;
+			animation: #{$name}-anim-2 5s infinite linear alternate-reverse;
+		}
+
+	}
+
+	.main {
+		background: #323133;
+		height: 100%;
+		color: #FAFAFA;
+		z-index: 2;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		.what-i-use {
+			width: 400px;
+			z-index: 999;
+			margin: 0;
+			font-weight: 450;
+			font-size: 1.777em;
+			padding-top: 52px;
+			padding-left: 72px;
+			@include textGlitch("what-i-use", 17, #FAFAFA, black, #FF9F43, #5F27CD, 314, 55);
+		}
+		.m-container {
+			align-self: center;
+			margin-left: 170px;
+			margin-top: 100px;
+			.list {
+				font-size: 48px;
+				padding: 0;
+				margin-left: 10px;
+				list-style: none;
+				display: inline-block;
+				font-weight: 500;
+				.list__text--orange {
+					color: #FF9F43;
+					text-align: left;
+				}
+
+				.list-text--purple {
+					color: #6A50A7;
+					text-align: right;
+				}
+				&:first-child {
+					margin-left: 0;
+					margin-right: -20px;
+					transform: translateY(-34%);
+				}
+				&:last-child {
+					margin-left: -95px;
+					transform: translateY(38%);
+				}
+			}
+		}
+	}

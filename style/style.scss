@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	font-size: 36px;
+}
+
+@import './components/_header.scss';
+@import './components/_main.scss';
