@@ -51,16 +51,16 @@
 
 	}
 
-	.main {
-		background: #323133;
+	.can {
 		height: 100%;
+		background: #323133;
 		color: #FAFAFA;
 		z-index: 2;
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
 		.what-i-use {
-			width: 400px;
+			width: 450px;
 			z-index: 999;
 			margin: 0;
 			font-weight: 450;
@@ -71,7 +71,7 @@
 		}
 		.m-container {
 			align-self: center;
-			margin-left: 170px;
+			margin-left: 0px;
 			margin-top: 100px;
 			.list {
 				font-size: 48px;
@@ -99,5 +99,8 @@
 					transform: translateY(38%);
 				}
 			}
+		}
+		.statue {
+
 		}
 	}
