@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 
+*::selection {
+  background: #7b62b6;
+}
+
+*::-moz-selection {
+  background: #7b62b6;
+}
+
 html, body {
 	font-family: 'Roboto', sans-serif;
 	height: 100%;

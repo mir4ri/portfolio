@@ -1,9 +1,9 @@
 .work {
 	background: #5F27CD;
-	margin: 5px;
+	margin: 5px 0;
 	text-align: center;
 	.btn-work {
-		margin: 240px 0;
+		margin: 256px 0;
 		transition: border 0.5s ease-out;
 		border: 3px solid #FAFAFA;
 		background: none;
@@ -20,7 +20,7 @@
 			height: 100%;
 			background: #FF9F43;
 			margin-top: -10px;
-			margin-bottom: -32px;
+			margin-bottom: -30px;
 			margin-left: -38px;
 		}
 			&:hover {

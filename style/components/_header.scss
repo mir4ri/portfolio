@@ -3,14 +3,16 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: linear-gradient(180deg, rgba(50, 49, 51, 0.42) 8.75%, rgba(75, 44, 136, 0.42) 25.97%, rgba(95, 39, 205, 0.42) 100%),#5F27CD;
+	background: linear-gradient(180deg, rgba(50, 49, 51, 0.42) 8.75%, rgba(75, 44, 136, 0.42) 25.97%, rgba(95, 39, 205, 0.42) 100%), #5F27CD;
 	margin-bottom: 5px;
+
 	.h-container {
 		color: #FAFAFA;
 		display: flex;
 		justify-content: space-between;
-		padding-top: 17px;
+		padding-top: 25px;
 		margin-bottom: 50px;
+
 		.logo {
 			margin: 0;
 			margin-left: 45px;
@@ -20,6 +22,7 @@
 		.nav {
 			cursor: default;
 			margin-right: 8px;
+
 			.nav__to {
 				color: #FAFAFA;
 				text-decoration: none;
@@ -27,6 +30,7 @@
 				font-size: 0.5em;
 				font-weight: 400;
 				vertical-align: center;
+
 				&:hover {
 					text-decoration: underline;
 				}
@@ -34,17 +38,23 @@
 		}
 	}
 
-	.title {
-		text-align: center;
-		color: #FAFAFA;
-		.title__name {
-			margin: 0;
-			font-weight: 450;
-		}
-		.title__text {
-			margin: 0;
-			margin-top: 10px;
-			font-weight: 400;
+	.title-container {
+		width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		.title {
+			text-align: center;
+			color: #FAFAFA;
+			.title__name {
+				margin: 0;
+				font-weight: 450;
+			}
+
+			.title__text {
+				margin: 0;
+				margin-top: 10px;
+				font-weight: 400;
+			}
 		}
 	}
 
@@ -63,12 +73,14 @@
 		position: relative;
 		overflow: hidden;
 		margin-bottom: 120px;
+
 		span {
 			position: relative;
 			transition: all 0.1s ease-out;
 			z-index: 2;
 			margin-right: 30px;
 		}
+
 		.arrow-right {
 			position: absolute;
 			border: solid #FAFAFA;
@@ -81,6 +93,7 @@
 			transform: rotate(-45deg);
 			-webkit-transform: rotate(-45deg);
 		}
+
 		&:hover {
 			transition: all 0.2s ease-in;
 			color: #323133;

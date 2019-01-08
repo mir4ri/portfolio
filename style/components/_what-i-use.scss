@@ -55,6 +55,7 @@
 		display: flex;
 		justify-content: space-between;
 		.what-i-use {
+			cursor: default;
       width: 450px;
       height: 100%;
 			z-index: 999;
@@ -80,7 +81,6 @@
 					color: #FF9F43;
 					text-align: left;
 				}
-
 				.list-text--purple {
 					color: #6A50A7;
 					text-align: right;
@@ -96,17 +96,18 @@
 				}
 			}
 		}
-  }
-  
+		.statue {
+		 	height: 100%;
+		}
+	}
+
   @media screen and (max-width: 1440px) {
     .can {
       .m-container {
         align-self: flex-end;
-        // margin: 0
         .list {
           margin: 0;
           &:last-child {
-            // margin-left: 200px;
             transform: translate(140%,-64% );
           }
         }
