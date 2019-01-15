@@ -154,14 +154,14 @@
 
 					&:after {
 						z-index: 1;
-						left: 21px;
+						left: 22px;
 						text-shadow: -1px 0 $highlightColor1;
 						animation: #{$name}-anim-1 5s infinite linear alternate-reverse;
 					}
 
 					&:before {
 						z-index: 1;
-						margin-left: 21px;
+						margin-left: 22px;
 						text-shadow: 2px 0 $highlightColor2;
 						background-color: #5F27CD;
 						animation: #{$name}-anim-2 5s infinite linear alternate-reverse;
