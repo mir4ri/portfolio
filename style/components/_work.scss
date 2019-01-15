@@ -34,3 +34,12 @@
 			}
 	}
 }
+
+@media screen and (max-width: 414px) {
+	.work {
+		margin: 0;
+		.btn-work {
+			margin: 121px 0;
+		}
+	}
+}

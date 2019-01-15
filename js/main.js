@@ -1,4 +1,4 @@
-// #croll
+// scroll
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -17,7 +17,7 @@ $('a[href*="#"]')
           {
             scrollTop: target.offset().top
           },
-          1000
+          1500
         );
       }
     }

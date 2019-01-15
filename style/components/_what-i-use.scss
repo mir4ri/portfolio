@@ -54,10 +54,10 @@
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
+
 		.what-i-use {
 			cursor: default;
-      width: 450px;
-      height: 100%;
+			width: 450px;
 			z-index: 999;
 			margin: 0;
 			font-weight: 450;
@@ -66,10 +66,12 @@
 			padding-left: 72px;
 			@include textGlitch("what-i-use", 17, #FAFAFA, black, #FF9F43, #5F27CD, 314, 55);
 		}
+
 		.m-container {
 			align-self: center;
 			margin-left: 0px;
 			margin-top: 100px;
+
 			.list {
 				font-size: 48px;
 				padding: 0;
@@ -77,43 +79,119 @@
 				list-style: none;
 				display: inline-block;
 				font-weight: 500;
+
 				.list__text--orange {
 					color: #FF9F43;
 					text-align: left;
 				}
+
 				.list-text--purple {
 					color: #6A50A7;
 					text-align: right;
 				}
+
 				&:first-child {
 					margin-left: 0;
 					margin-right: -20px;
 					transform: translateY(-34%);
 				}
+
 				&:last-child {
 					margin-left: -95px;
 					transform: translateY(38%);
 				}
 			}
 		}
+
 		.statue {
-		 	height: 100%;
+			height: 100%;
 		}
 	}
 
-  @media screen and (max-width: 1440px) {
-    .can {
-      .m-container {
-        align-self: flex-end;
-        .list {
-          margin: 0;
-          &:last-child {
-            transform: translate(140%,-64% );
-          }
-        }
-      }
-      .statue {
-        height: 665px;
-      }
-    }
-  }
+	@media screen and (max-width: 1680px) {
+		.can {
+			.m-container {
+				margin-top: 300px;
+
+				.list {
+					margin: 0;
+
+					&:last-child {
+						transform: translate(140%, -64%);
+					}
+				}
+			}
+
+			.statue {
+				height: 765px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1366px) {
+		.can {
+			.m-container {
+				align-self: flex-end;
+			}
+
+			.statue {
+				height: 665px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 414px) {
+			@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) { 
+				position: absolute;
+					&:before,
+					&:after {
+						top: 50;
+						left: 0;
+						width: 100%;
+						clip: rect(0, 0, 0, 0);
+						z-index: 2;
+					}
+
+					&:after {
+						z-index: 1;
+						left: 21px;
+						text-shadow: -1px 0 $highlightColor1;
+						animation: #{$name}-anim-1 5s infinite linear alternate-reverse;
+					}
+
+					&:before {
+						z-index: 1;
+						margin-left: 21px;
+						text-shadow: 2px 0 $highlightColor2;
+						background-color: #5F27CD;
+						animation: #{$name}-anim-2 5s infinite linear alternate-reverse;
+					}
+			}
+		.can {
+			.what-i-use {
+				position: absolute;
+				width: 202px;
+				font-size: 42px;
+				padding-left: 22px;
+				@include textGlitch("what-i-use", 17, #FAFAFA, black, #FF9F43, #5F27CD, 203, 55);
+			}
+			.m-container {
+				margin-left: 20px;
+				.list {
+					font-size: 36px;
+					padding: 0;
+					margin-left: 10px;
+					list-style: none;
+					display: inline-block;
+					font-weight: 500;
+					&:last-child {
+						margin: 0;
+						transform: translate(110%, -64%);
+					}
+				}
+			}
+			.statue {
+				display: none;
+			}
+		}
+	}
