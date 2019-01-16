@@ -108,22 +108,37 @@
 		}
 	}
 
-	@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 1700px) {
 		.can {
 			.m-container {
-				margin-top: 300px;
+				// margin-top: 300px;
 
 				.list {
 					margin: 0;
 
 					&:last-child {
-						transform: translate(140%, -64%);
+						// transform: translate(140%, -64%);
 					}
 				}
 			}
 
 			.statue {
 				height: 765px;
+			}
+		}
+	}
+
+		@media screen and (max-width: 1440px) {
+		.can {
+			.m-container {
+				margin-top: 300px;
+
+				.list {
+
+					&:last-child {
+						transform: translate(140%, -64%);
+					}
+				}
 			}
 		}
 	}
