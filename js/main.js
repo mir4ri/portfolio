@@ -95,7 +95,7 @@ particlesJS("particles-js", {
     detect_on: "canvas",
     events: {
       onhover: { enable: false, mode: "buble" },
-      onclick: { enable: true, mode: "bubble" },
+      onclick: { enable: true, mode: "push" },
       resize: true
     },
     modes: {
