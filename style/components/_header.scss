@@ -1,14 +1,13 @@
-
 #particles-js {
-    position: absolute;
-	width: 100%;
-	height: 100%;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-position: 50% 50%;
-  }
-  .header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.header {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -26,8 +25,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
-	margin-bottom: 20px;
-	z-index: 0;
+    margin-bottom: 20px;
+    z-index: 0;
     .logo {
       margin: 0;
       margin-left: 45px;
@@ -156,20 +155,19 @@
 
 @media screen and (max-width: 414px) {
   .header {
-    .h-container {
-      .nav {
-        display: none;
-      }
-    }
     .title-container {
       width: 350px;
       .title {
         font-size: 18px;
       }
     }
-    .btn-to {
-      width: 190px;
-      font-size: 24px;
+    .h-container {
+      .logo {
+        margin-left: 25px;
+      }
+      .nav {
+        display: none;
+      }
     }
   }
 }

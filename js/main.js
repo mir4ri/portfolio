@@ -82,7 +82,7 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 12.827296486924183,
+      speed: 11,
       direction: "bottom-right",
       random: true,
       straight: true,
@@ -94,7 +94,7 @@ particlesJS("particles-js", {
   interactivity: {
     detect_on: "canvas",
     events: {
-      onhover: { enable: false, mode: "grab" },
+      onhover: { enable: false, mode: "buble" },
       onclick: { enable: true, mode: "bubble" },
       resize: true
     },

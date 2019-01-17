@@ -111,14 +111,9 @@
 	@media screen and (max-width: 1700px) {
 		.can {
 			.m-container {
-				// margin-top: 300px;
 
 				.list {
 					margin: 0;
-
-					&:last-child {
-						// transform: translate(140%, -64%);
-					}
 				}
 			}
 
@@ -186,14 +181,15 @@
 			.what-i-use {
 				position: absolute;
 				width: 202px;
-				font-size: 42px;
+				font-size: 38px;
 				padding-left: 22px;
 				@include textGlitch("what-i-use", 17, #FAFAFA, black, #FF9F43, #5F27CD, 203, 55);
 			}
 			.m-container {
-				margin-left: 20px;
+				margin-top: 200px;
+				margin-left: 13px;
 				.list {
-					font-size: 36px;
+					font-size: 32px;
 					padding: 0;
 					margin-left: 10px;
 					list-style: none;
