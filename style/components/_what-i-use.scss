@@ -111,29 +111,29 @@
 	@media screen and (max-width: 1700px) {
 		.can {
 			.m-container {
-
+				margin-top: 300px;
 				.list {
 					margin: 0;
+					&:last-child {
+						margin: 0;
+						transform: translate(110%, -64%);
+					}
 				}
 			}
 
 			.statue {
-				height: 765px;
+				height: 940px;
 			}
 		}
 	}
 
 		@media screen and (max-width: 1440px) {
 		.can {
-			.m-container {
-				margin-top: 300px;
-
-				.list {
-
-					&:last-child {
-						transform: translate(140%, -64%);
-					}
-				}
+			.what-i-use {
+				font-size: 60px;
+			}
+			.statue {
+				height: 900px;
 			}
 		}
 	}
@@ -194,7 +194,6 @@
 					margin-left: 10px;
 					list-style: none;
 					display: inline-block;
-					font-weight: 500;
 					&:last-child {
 						margin: 0;
 						transform: translate(110%, -64%);
