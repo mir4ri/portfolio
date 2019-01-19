@@ -17,7 +17,7 @@ $('a[href*="#"]')
           {
             scrollTop: target.offset().top
           },
-          1500
+          1250
         );
       }
     }
