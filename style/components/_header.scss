@@ -30,6 +30,15 @@
       margin: 0;
       margin-left: 54px;
       font-weight: 500;
+      text-align: right;
+      margin-bottom: -12px;
+      &:after {
+        content: "alpha";
+        font-size: 9px;
+        display: block;
+        margin-top: -9px;
+        margin-right: -22px;
+      }
     }
 
     .nav {
