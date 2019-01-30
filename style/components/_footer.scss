@@ -110,6 +110,27 @@
 
 	@media screen and (max-width: 414px) {
 		.footer {
-			display: none;
+			.left {
+				display: none;
+			}
+			.right {
+				width: 100%;
+				.btn-hire {
+					width: 100%;
+				}
+				.social {
+					width: 100%;
+					align-self: center;
+					margin: 50px 0;
+					justify-content: space-around;
+					.social__el {
+						.social__el__link {
+							i {
+								font-size: 64px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
