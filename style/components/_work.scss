@@ -11,15 +11,14 @@
     &:last-child {
       border: none;
     }
-    &:hover .w-describe {
+    &:hover .w-slide-container {
       bottom: 0;
       transition: bottom 0.7s;
     }
     .w-title {
-      width: 500px;
       margin: 0;
     }
-    .w-describe {
+    .w-slide-container {
       position: relative;
       width: 100%;
       display: flex;
@@ -27,13 +26,13 @@
       justify-content: space-between;
       transition: bottom 1s;
       padding-right: 50px;
-      .w-describe__text {
+      .w-slide-container__text {
         width: 550px;
         margin: auto;
         font-size: 24px;
         text-align: center;
       }
-      .w-describe__btn {
+      .w-slide-container__btn {
         text-decoration: none;
         color: #1f1f1f;
         width: 1em;
@@ -68,18 +67,18 @@
         width: 300px;
         margin-bottom: 35px;
       }
-      .w-describe {
+      .w-slide-container {
         bottom: 0;
         padding: 0;
         font-size: 32px;
         flex-direction: column;
 
-        .w-describe__text {
+        .w-slide-container__text {
           margin: 0 auto;
           width: 270px;
           margin-bottom: 35px;
         }
-        .w-describe__btn {
+        .w-slide-container__btn {
           letter-spacing: 0;
           margin: 0 auto;
           width: 170px;
